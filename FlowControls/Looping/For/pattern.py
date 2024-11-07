@@ -1,0 +1,22 @@
+#nested for loop
+for i in range(1,4):
+
+    for j in range(1, 4):
+        print(i, end=" ")
+    print()
+#OUTPUT IS
+# 1
+# 1
+# 1
+# 2
+# 2
+# 2
+# 3
+# 3
+# 3
+
+#OUTPUT IS
+#
+# 1 1 1
+# 2 2 2
+# 3 3 3
