@@ -6,3 +6,12 @@ def add(num1,num2):
 
 add(20,50)
 add(10,10)
+
+num_1=int(input("Enter 1: "))
+num_2=int(input("Enter 2: "))
+
+def add2():
+    sum=num_1+num_2
+    print(sum)
+
+add2()
