@@ -11,10 +11,6 @@ def div(num1,num2):
     sum=num1/num2
     print(sum)
 
-def numbers():
-     num1 = int(input("Enter number 1: "))
-     num2 = int(input("Enter number 2: "))
-     return num1,num2
 
 
 print(" 1.Addition\n2.Subtraction\n3.Multiplication\n4.Division")
