@@ -30,6 +30,13 @@ lst=[[101,'vinay','k',28,'bigdata',1600],
 #         print(i[1::2])
 
 # age > 20 & proff == python print fname
-for i in lst:
-    if i[3]>28 and i[4]=='python':
-        print(i[1:5])
+# for i in lst:
+#     if i[3]>28 and i[4]=='python':
+#         print(i[1:5])
+
+#Total salary
+# Sum=0
+# for i in lst:
+#     Sum+=i[5]
+# print(Sum)
+
