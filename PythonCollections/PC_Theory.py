@@ -42,3 +42,9 @@ marks[5]=60     #INVALID
 # 5. Mutable or Immutable
 
 
+
+#collections       Define   hetro   Duplicates  preserve_insertion  mu/im
+#   lists           []       yes        yes         yes             mu
+#   tuple           ()       yes        yes         yes             im
+#   set             set()    yes        no          no              mu
+#   dictionary      {}       yes      K:yes V:No    yes             mu
