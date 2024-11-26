@@ -70,11 +70,11 @@ for i in file1:
 #         dic[prof] += 1
 #print(dic)
 # 12 Each location count
-#     if loc not in dic:
-#         dic[loc] = 1
-#     else:
-#         dic[loc] += 1
-# print(dic)
+    if loc not in dic:
+        dic[loc] = 1
+    else:
+        dic[loc] += 1
+print(dic)
 
 # 13 Each age group count
 #     if age not in dic:
@@ -82,3 +82,6 @@ for i in file1:
 #     else:
 #         dic[age]+=1
 # print(dic)
+
+for k,v in dic.items():
+    print(k,",",v)
