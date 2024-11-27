@@ -1,4 +1,4 @@
-file=open('C:/Users/joeva\Documents/PY_DS/temper.unknown')
+file=open('C:/Users/joeva/Documents/PY_DS/temper.unknown')
 dic={}
 for i in file:
     data=i.rstrip('\n').split(',')

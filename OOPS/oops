@@ -1,0 +1,11 @@
+OOPS => Object Oriented Programing
+
+1. Class    : A base model or Blueprint
+
+2. Object   :(objects) from the same blueprint (class)
+
+3. Reference: Operation done on the object
+
+Class = Blueprint
+Object = Actual toy made from the blueprint
+Reference = Name tag to call and use the toy
