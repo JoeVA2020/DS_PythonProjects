@@ -9,3 +9,21 @@ OOPS => Object Oriented Programing
 Class = Blueprint
 Object = Actual toy made from the blueprint
 Reference = Name tag to call and use the toy
+
+
+Instantaneous variable: Value of the variable changes each time
+                declared inside method
+
+Static variable : Variable that does not need to be set each time / value make be same
+                declare inside class
+
+Constructor : Can be use to replace method
+                value can be directly inserted into object
+                def __init__(self):
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+OOPS Properties
+1 Inheritance
+2 Encapsulation
+3 Abstraction
+4

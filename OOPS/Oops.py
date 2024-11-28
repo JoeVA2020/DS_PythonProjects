@@ -1,5 +1,5 @@
-class A:
-    def printa(self):
+class A:                #==> Classg
+    def printa(self):   #==> Method
         print("Reading a book")
     def printb(self):
         print("Writing a book")
