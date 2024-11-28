@@ -11,5 +11,7 @@ def sort_words(string):
             lst.append(i)
     lst.sort()
     print(lst)
+    sortedlst=[','.join(lst)]
+    print(sortedlst)
 
 sort_words(string)
