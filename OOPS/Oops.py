@@ -9,3 +9,5 @@ odj1.printb()
 
 obj2=A()
 obj2.printb()
+
+

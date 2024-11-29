@@ -26,4 +26,45 @@ OOPS Properties
 1 Inheritance
 2 Encapsulation
 3 Abstraction
-4
+4 Polymorphism
+
+````````````````````````
+Inheritance : child class inheriting certain features of parent class
+class A:  # Parent class / Base class
+    def printa(self, num1):
+        self.num1 = num1
+        print('Inside class A', self.num1)
+
+
+class B(A):  # child class / Derived class
+    def printb(self, num2):
+        self.num2 = num2
+        print("inside class B", self.num2)
+
+obj1=B()
+obj1.printa(5)
+``````````````````````````````````````````````````````````````````````````````
+Example 2
+
+PROGRAM : employee3
+
+class Person:           #parent class/base class
+    def presonal_data(self,fname,lname,age,loc):
+        self.fname=fname
+        self.lname=lname
+        self.age=age
+        self.loc=loc
+
+class Employee(Person):     #child class/ derived class
+    def professional_data(self,id,prof,exp,salary):
+        self.id=id
+        self.prof=prof
+        self.exp=exp
+        self.salary=salary
+    def print_data(self):
+        print(self.id,self.fname,self.lname,self.age,self.prof,self.salary,self.exp,self.loc)
+
+emp1=Employee()
+emp1.professional_data(214236,'job',2,21000)
+emp1.presonal_data('joe','v',22,'tvm')
+emp1.print_data()
