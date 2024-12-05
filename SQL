@@ -28,3 +28,24 @@ Instal MySQL in LINUX
 2 Enter passsword
 3 sudo apt-get install mysql-server
 4
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+MY SQL COMMANDS
+`````````````````````````````````````````````````````````````````````
+CREATE DATABASE dbname;
+show databases; ==> lists databases in SQL
+drop database dbname; ==> drops a db from sql
+
+
+SQL datatypes
+int
+bigint
+float
+double
+char
+varchar
+date : yyyy-mm-dd   2024-12-05
+datetime: yyyy-mm-dd hh-mm-ss
+
+
+
