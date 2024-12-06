@@ -28,14 +28,7 @@ Instal MySQL in LINUX
 2 Enter passsword
 3 sudo apt-get install mysql-server
 4
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
-MY SQL COMMANDS
-`````````````````````````````````````````````````````````````````````
-CREATE DATABASE dbname;
-show databases; ==> lists databases in SQL
-drop database dbname; ==> drops a db from sql
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 SQL datatypes
 int
@@ -47,5 +40,29 @@ varchar
 date : yyyy-mm-dd   2024-12-05
 datetime: yyyy-mm-dd hh-mm-ss
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+MY SQL COMMANDS
+`````````````````````````````````````````````````````````````````````
+CREATE DATABASE dbname;
+show databases; ==> lists databases in SQL
+drop database dbname; ==> drops a db from sql
+use dbname; ==> to change or use database
 
+create table tablename(schema);
+Eg: CREATE TABLE employee(id int,fname varchar(20),lname varchar(10),age int);
 
+DESCRIBE tablename; ==> shows the details of the table
+------------------------------------------------------------------------------------------------------------
+How to add new column to table?
+ALTER TABLE table_name ADD column_name datatype;
+To add at a certain location use AFTER
+ALTER TABLE table_name ADD col_name datatype AFTER col_name;
+To add at first location use first
+ALTER TABLE tablename ADD col_name datatype first;
+To add multiple columns together
+ALTER TABLE tbname ADD (col_name dtype,col_name dtype);
+To add Multiple columns at certian locations
+ALTER TABLE table_name ADD col_name datatype AFTER col_name,ADD col_name datatype AFTER col_name;
+
+How to Change datatype
+ALTER TABLE tbname MODIFY col_name dtype;
