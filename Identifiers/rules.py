@@ -1,4 +1,4 @@
-#Rules for creating variables
+-#Rules for creating variables
 # 1. Space not supported
 # 2. Do not use unwanted spaces before after or in between variable name
 # 3. Number & special Characters not supported at beginning '_' exempted

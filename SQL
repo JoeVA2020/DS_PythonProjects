@@ -66,3 +66,141 @@ ALTER TABLE table_name ADD col_name datatype AFTER col_name,ADD col_name datatyp
 
 How to Change datatype
 ALTER TABLE tbname MODIFY col_name dtype;
+
+DROP column
+ALTER TABLE tbname DROP clname
+
+DROP multiple columns
+ALTER TABLE TableName DROP COLUMN Column1,DROP COLUMN Column2;
+
+hOW TO CHANGE TABLE NAME
+ALTER TABLE tbname RENAME newtbname;
+
+HOW TO DROP A TABLE
+DROP TABLE tbname;
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+HOW TO INSERT VALUES TO MYSQL TABLES
+
+mANUAL METHOD== INSERT INTO tbname (clname) VALUES (Values);
+
+HOW TO UPDATE MYSQL VALUES
+UPDATE tbname SET clname=new value WHERE condition;
+
+TO see values inside tables
+SELECT * from tbname        --> All values
+SELECT clname FROM tbname   --> Specific values
+
+How to collect rows
+SELECT * FROM tbname limit(no of rows)
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+CRUD OPERATIONS
+Create
+Read
+Update
+Delete
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TO STORE RESULTS OF ANANLYSIS WE CAN CREATE A VIEW TABLE
+create view tablename as query;
+
+```````````````````````````````````````````
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NORMAL OPERATORS
+``````````````````````````````````````````
+ORDER BY
+To sort data in tables
+asc/dsc
+select * from tbname ORDER BY colname;      => asc
+select * from tbname ORDER BY colname desc; => Desc
+
+`````````````````````````````````````````````````````````````
+DISTINCT
+to remove duplicate rows
+select distinct * from sample4;
+______________________________________________________________
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+EVALUATING FUNCTIONS
+`````````````````````````
+COUNT
+MAX
+MIN
+SUM
+AVG
+``````````````````````````````
+COUNT()
+select count(*) from sample4;                           ==> Gives the count of number of rows in the table
+select colname,count(*) from tblname group by colname;  ==> Can also be used for each column wise count
+``````````````````````````````
+MAX()
+used to find the maximum value of a item in a column
+select colname,max(colname0) from tblname group by colname;
+``````````````````````````````
+MIN()
+used to find the minimum value of a item in a column
+select colname,min(colname0) from tblname group by colname;
+`````````````````````````````````
+SUM()
+Used to calculate the total of a colum
+select colname,sum(colname) from tblname group by colname;
+`````````````````````````````````
+AVG()
+Used to calulate the average of a column
+select colname,avg(colname) from tblname group by colname;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+JOIN operation
+To join two tables together with a common field to create a new table
+
+TYPES OF JOIN
+`````````````
+Inner joining
+Left outer joining
+Right outer joining
+Full outer joining
+```````````````````
+INNER JOINING
+Joins tables with common fields and matching data to create a new table
+SYNTAX => select a.colname,a.colname,b.colname,b.colname from tblname a join tblname b on(a.commonfeild=b.commoonfeild);
+TABLE 1
+id  fname   lnaame  age loc
+1   anu     k       27  calicut
+2   vipin   p       30  malapuram
+3   arjun   k       28  ekrm
+4   amal    r       30  thrissur
+
+TABLE 2
+prod    id  salary  gender
+bigdata 3   3500    male
+python  4   4500    male
+testing 6   3000    male
+testing 7   4500    female
+
+3 arjun k 28 eklm bigdata 3500  male
+4 amal  r 30 thrissur  python 4500 male
+```````````````````````````````````````````
+LEFT OUTER JOINING
+It returns all the row from the left table plus matched value from right table or null
+incase of no matching values
+
+SYNTAX =>  select a.colname,a.colname,b.colname,b.colname from tblname a left outer join tblname b on(a.commonfeild=b.commoonfeild);
+`````````````````````````````````````````````
+RIGHT OUTER JOIN
+It returns all the row from the right table plus matched value from left table or null
+incase of no matching values
+
+SYNTAX =>  select a.colname,a.colname,b.colname,b.colname from tblname a right outer join tblname b on(a.commonfeild=b.commoonfeild);
+``````````````````````````````````````````````
+FULL OUTER JOIN
+It is a result of the combination of left outer join and right outer join.
+SYNTAX =>
+select a.colname,a.colname,b.colname,b.colname from tblname a left outer join tblname b on(a.commonfeild=b.commoonfeild)
+UNION
+select a.colname,a.colname,b.colname,b.colname from tblname a right outer join tblname b on(a.commonfeild=b.commoonfeild);
+`````````````````````````````````````````````````
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
++----------------------------------------------------------------------------------------------+
+|   HEIRARCHY                                                                                  |
+|   SELECT join==> colname count,max,min,sum,avg from tblname where group by order by limit;   |
++----------------------------------------------------------------------------------------------+
+

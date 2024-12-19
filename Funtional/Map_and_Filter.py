@@ -16,7 +16,7 @@
  #[1,2,3,4,5,6,7,8,9,10] ==> [2,4,6,8,10]
 # SYNTAX ==> list(filter(function,iterable))
 
-lst1=[1,2,3,4,5,6,7,8,9,10]
+lst=[1,2,3,4,5,6,7,8,9,10]
 
 # f=map(square,lst)
 # print(f)
@@ -30,6 +30,6 @@ lst1=[1,2,3,4,5,6,7,8,9,10]
 # f=list(filter(lambda num:num%2==0,lst1))
 # print(f)
 
-f=list(filter(lambda num:num%2!=0,lst1))
+f=list(filter(lambda num:num%2!=0,lst))
 m=list(map(lambda num:num**2,f))
 print(m)
