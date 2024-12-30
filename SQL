@@ -201,6 +201,6 @@ select a.colname,a.colname,b.colname,b.colname from tblname a right outer join t
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 +----------------------------------------------------------------------------------------------+
 |   HEIRARCHY                                                                                  |
+|                                                                                              |
 |   SELECT join==> colname count,max,min,sum,avg from tblname where group by order by limit;   |
 +----------------------------------------------------------------------------------------------+
-

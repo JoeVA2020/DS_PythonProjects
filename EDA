@@ -1,0 +1,35 @@
+EDA (Exploratory Data Analysis)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Numpy
+Pandas
+Matplotlib
+Seaborn
+-----------------------
+Numpy
+~~~~
+Numerical python
+used for mathematical operations
+Linear algebra
+````````````````````
+matrix ,vectors, fourier series
+
+
+Face Recognition system
+
+```````````````````````````````````````
+Pandas
+
+Data manipulation
+Data set
+        1) Data Analysis
+        2) Data Cleaning
+                A) Handle missing values
+                B) Remove unwanted columns
+                C) Remove wrong data
+
+````````````````````````````````````````
+Matplotlib and seaborn
+
+Data visualisation
+pie chart, bar chart, histogram,line points...........
